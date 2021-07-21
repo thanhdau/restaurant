@@ -1,0 +1,23 @@
+:root{
+    --primary-color: #4fbffd;
+    --text-color: #333;
+    --while-color:#fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+
+.grid{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
