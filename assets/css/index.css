@@ -1,3 +1,24 @@
+.header{
+    background: var(--while-color);
+    border-radius: 0 0 10rem 10rem;
+    padding: 7px 0;
+    transition: padding ease 0.3s;
+}
+
+.header.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav{
+    padding: 8px 0 0;
+    display: inline-block;
+    display: flex;
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -6,14 +27,14 @@
     background-color: var(--while-color);
 }
 
-/* .nav.row{
+nav.row{
     justify-content: space-between;
     align-items: center;
-} */
+}
 
 .navbar__left img{
-    height: 100%;
-    width: auto;
+    height: 72px;
+    width: 147px;
 }
 
 .navbar__right-list{
@@ -23,14 +44,214 @@
     margin-right: 3rem;
 }
 
-.navbar__right-list-btn{
+.navbar__right-list a{
+    display: block;
+    font-weight: 600;
+    padding: 15px 15px;
+    margin: 0 5px;
+    border-radius: 3rem;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.navbar__right-list a{
+    color: var(--primary-color);
+    font-size: 17px;
+}
+
+a.home{
+    color: var(--while-color);
+    background: var(--primary-color);
+}
+.nav-list__menu li:hover a,
+.navbar__right > ul > li > a:hover{
+    color: var(--while-color);
+    background: var(--primary-color);
+}
+
+.navbar__right > ul > li{
     position: relative;
 }
 
-.navbar__right-list-btn{
+.navbar__right-list-menu-icon{
+    position: relative;
+    top: -3px;
+    margin-left: 8px;
+    font-size: 1.6rem;
+}
+
+.navbar__right-list-menu{
+    position: absolute;
+}
+
+.nav-list__menu{
     display: block;
-    font-weight: 600;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
+    width: 120px;
+    min-width: 60%;
+    position: absolute;
+    top: 50px;
+    left: 11px;
+    background-color: var(--while-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    z-index: 1;
+    transition: all ease 0.3s;
+    opacity: 0;
+}
+
+.nav-list__menu > li a {
+    display: block;
+    padding: 15px 20px;
+    border-radius: unset;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.navbar__right-list-menu:hover .nav-list__menu{
+    visibility: visible;
+    opacity: 1;
+    top: 5.5rem;
+}
+
+
+/* Container */
+
+.container-fluid{
+    position: relative;
+    background: url(../img/background-slider.jpg) no-repeat fixed center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-fluid__content{
+    z-index: 2;
+    position: relative;
+    top: 30%;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--while-color);
+}
+
+.container-fluid__content > p:first-child,
+.container-fluid__content > p:nth-child(2) {
+  font-family: "Sacramento", cursive;
+}
+
+.container-fluid__content > p:first-child{
+    font-size: 72px;
+    display: inline-block;
+    color: var(--gold-color);
+    position: relative;
+}
+
+.container-fluid__content > p:first-child::before{
+    content: "";
+    position: absolute;
+    top: -2.2rem;
+    right: 5rem;
+    width: 50px;
+    height: 50px;
+    background: url(/assets/img/Vector-Smart-Object.png) no-repeat;
+}
+
+.container-fluid__content > p:nth-child(2){
+    font-size: 36px;
+    padding: 0 0 20px;
+}
+
+.container-fluid__content-title{
+    font-size: 7.2rem;
+    height: 17rem;
+  
+    color: var(--gold-color);
+    font-family: "Pacifico", cursive;
+}
+
+.container-fluid__content-title-btn{
+    font-size: 15px;
+    margin-top: 46px;
+}
+
+.container-fluid-btn{
+    color: var(--while-color);
+}
+
+.btn-color:hover{
+    color: var(--while-color);
+    background-position: 0 100% ;
+}
+
+
+/* Clouds */
+.banner{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner__clouds{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner__clouds img{
+    position: absolute;
+    bottom: 0;
+    opacity: 0.7;
+    animation: effectClouds calc(20s * var(--i)) linear infinite;
+}
+
+/* About us */
+.about{
+    padding: 60px;
+    display: flex;
+}
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__content{
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.about__content-intro{
+    line-height: 1.5;
+    padding: 10px 0;
+    font-size: 17px;
+}
+
+.about__content-intro h2{
+    color: #333;
+    cursor: text;
+}
+
+.about__content-intro span{
     color: var(--primary-color);
+    cursor: text;
+}
+
+.about__content-details{
+    text-align: justify;
+    font-size: 16px;
+    padding: 0.5rem 2rem;
+    line-height: 2.5rem;
+}
+
+.about__content-book{
+    padding: 5rem 0;
+}
+
+.about__content-book-btn{
+    color: var(--primary-color);
+    font-size: 15px;
 }

@@ -1,0 +1,18 @@
+/* clouds */
+@keyframes effectClouds{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(100%);
+    }
+}
+
+/* btn-color */
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }to{
+        transform: translateZ(0);
+    }
+}

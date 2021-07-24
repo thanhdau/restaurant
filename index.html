@@ -8,93 +8,150 @@
         <title>Restaurant</title>
         <link rel="stylesheet" href="assets/css/base.css">
         <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/animation.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap">
     </head>
     <body>
-
-        <!-- Header -->
-        <header class="header">
-            <div class="navbar grid wide row ">
-                <!-- navbar_left  -->
-                <div class="navbar__left">
-                    <a href="" class="navbar__left-logo">
-                        <img src="assets/img/logo.png" alt="Logo">
-                    </a>
-                </div>
-
-                <!-- navbar right -->
-                <div class="navbar__right">
-                    <ul class="navbar__right-list">
-                        <li class="navbar__right-list-btn">
-                            <a href="">Home</a>
-                        </li>
-                        <li class="navbar__right-list-btn">
-                            <a href="">Menu</a>
-                        </li>
-                        <li class="navbar__right-list-btn">
-                            <a href="">Book Table</a>
-                        </li>
-                        <li class="navbar__right-list-btn">
-                            <a href="">News - Promotion</a>
-                        </li>
-                        <li class="navbar__right-list-btn">
-                            <a href="">Contact</a>
-                        </li>
-                        <li class="navbar__right-list-btn navbar__right-list-btn-menu">
-                            <a href="">Other
-                                <i class="fas fa-sort-down"></i>
+        <div class="grid">
+            <!-- Header -->
+            <header class="header fixed-top">
+                <div class="nav">
+                    <div class="navbar grid wide row ">
+                        <!-- navbar_left  -->
+                        <div class="navbar__left">
+                            <a href="" class="navbar__left-logo">
+                                <img src="assets/img/logo.png" alt="Logo">
                             </a>
-                            <ul class="nav-list__menu">
-                                <li><a href="">Images</a></li>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Chef</a></li>
+                        </div>
+        
+                        <!-- navbar right -->
+                        <div class="navbar__right">
+                            <ul class="navbar__right-list">
+                                <li>
+                                    <a class="home" href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">Menu</a>
+                                </li>
+                                <li>
+                                    <a href="">Book Table</a>
+                                </li>
+                                <li>
+                                    <a href="">News - Promotion</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+                                <li class="navbar__right-list-menu">
+                                    <a href="">Other
+                                        <i class="navbar__right-list-menu-icon fas fa-sort-down"></i>
+                                    </a>
+                                    <ul class="nav-list__menu">
+                                        <li><a href="">Images</a></li>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Chef</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
+            </header>
+            <!-- close header -->
+    
+            <!-- container-slider -->
+            <section class="container-fluid">
+                <div class="container-fluid__content grid wide">
+                    <p>Premium</p>
+                    <p>Quanlity</p>
+                    <div class="container-fluid__content-title">
+                        <p>Thành</p>
+                        <p>Restaurant</p>
+                    </div>
+                    <div class="container-fluid__content-title-btn">
+                        <a class="btn-color container-fluid-btn"href="">Đặt bàn</a>
+                    </div>
+                </div>
+                
+                <!-- clouds -->
+                <div class="banner">
+                    <div class="banner__clouds">
+                        <img src="assets/img/cloud1.png" style="--i:1;">
+                        <img src="assets/img/cloud2.png" style="--i:2;">
+                        <img src="assets/img/cloud3.png" style="--i:3;">
+                    </div>
+                </div>
+            </section>
+            <!-- close container-slider -->
+    
+            <!-- about -->
+            <section class="about">
+                <div class="grid wide">
+                    <div class="grid__row">
+                        <div class="about-img col l-3">
+                            <img src="assets/img/about-01.jpg" alt="">
+                        </div>
+                        <div class="about__content col l-6">
+                            <div class="about__content-intro">
+                                <h2>
+                                    Chào Mừng Bạn Đến Với
+                                    <br>
+                                    <span>Thành Restaurant</span>
+                                </h2>
+                            </div>
+                            <div class="about__content-details">
+                                <p>
+                                    Đến với Thành Restaurant cùng không gian lịch sự thực khách không những ăn ngon thưởng thức nghệ thuật ẩm thực với các món ăn từ Tây sang Á mà còn đảm bảo vệ sinh an toàn sức khỏe tuyệt đối là sự lựa chọn hoàn hảo cho quý khách hàng muốn tổ chức đặt tiệc sinh nhật, đặt tiệc cho công ty, đặt tiệc hội họp bạn bè, đặt tiệc cho tour khách tham quan du lịch.
+                                </p>
+                            </div>
+                            <div class="about__content-book">
+                                <a class="btn-color about__content-book-btn" href="">Đặt bàn</a>
+                            </div>
+                        </div>
+                        <div class="about-img col l-3 ">
+                            <img src="assets/img/about-02.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- close about -->
+    
+            <!-- qoute -->
+            <section class="qoute">
+    
+            </section>
+            <!-- close qoute -->
+    
+            <!-- menu -->
+            <section class="menu">
+    
+            </section>
+            <!-- close menu -->
+    
+            <!-- food photo -->
+            <section class="food-photo">
+    
+            </section>
+            <!-- close food photo -->
+    
+            <!-- comments customer -->
+            <div class="comments">
+    
             </div>
-        </header>
-        <!-- close header -->
-
-        <!-- container-slider -->
-        <section class="container">
-
-        </section>
-        <!-- close container-slider -->
-
-        <!-- about -->
-        <section class="about">
-
-        </section>
-        <!-- close about -->
-
-        <!-- qoute -->
-        <section class="qoute">
-
-        </section>
-        <!-- close qoute -->
-
-        <!-- menu -->
-        <section class="menu">
-
-        </section>
-        <!-- close menu -->
-
-        <!-- food photo -->
-        <section class="food-photo">
-
-        </section>
-        <!-- close food photo -->
-
-        <!-- comments customer -->
-        <div class="comments">
-
+            <!-- close comments -->
+    
+            <!-- footer -->
+            <footer class="footer">
+    
+            </footer>
+            <!-- close footer -->
         </div>
-        <!-- close comments -->
-
-        <!-- footer -->
-        <footer class="footer">
-
-        </footer>
-        <!-- close footer -->
     </body>
 </html>

@@ -1,7 +1,9 @@
 :root{
-    --primary-color: #4fbffd;
+    --primary-color: #ee4d2d;
     --text-color: #333;
-    --while-color:#fff;
+    --while-color: #fff;
+    --border-color:#dbdbdb;
+    --gold-color: #faff6c;
 }
 
 *{
@@ -12,14 +14,16 @@
 
 html{
     font-size: 62.5%;
-    line-height: 1.5;
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 ul{
     list-style-type: none;
 }
 
-a {
+a{
     text-decoration: none;
     text-transform: capitalize;
 }
@@ -28,6 +32,7 @@ a {
     width: 100%;
     display: block;
     padding: 0;
+    /* margin: 0 auto; */
 }
 
 .grid.wide{
@@ -35,14 +40,45 @@ a {
     margin: 0 auto;
 }
 
-.row{
+.grid__row{
     display: flex;
     flex-wrap: wrap;
     margin-left: -4px;
     margin-right: 4px;
 }
 
-.col{
+.grid__col{
     padding-left: 4px;
     padding-right: 4px;
+}
+
+/* Button style */
+
+.btn{
+    min-width: 120px;
+    height: 44px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6em;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+}
+
+.btn-color{
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: 3px solid var(--primary-color);
+    background-size: 100% 200%;
+    background-image: linear-gradient(
+        to top,
+        var(--primary-color) 50%,
+        transparent 50%
+    );
+    transition: all 0.5s, color 0.1s ease;   
+    animation: fadeInUp 1 2s;
 }
