@@ -3,20 +3,29 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Restaurant</title>
-        <link rel="stylesheet" href="assets/css/base.css">
-        <link rel="stylesheet" href="assets/css/index.css">
-        <link rel="stylesheet" href="assets/css/animation.css">
-        <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- Animation css -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+        
+        <!-- Slide show -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap">
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/animation.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/slideslick.css">
     </head>
     <body>
         <div class="grid">
@@ -41,7 +50,7 @@
                                     <a href="">Menu</a>
                                 </li>
                                 <li>
-                                    <a href="">Book Table</a>
+                                    <a href="">Book</a>
                                 </li>
                                 <li>
                                     <a href="">News - Promotion</a>
@@ -69,14 +78,14 @@
             <!-- container-slider -->
             <section class="container-fluid">
                 <div class="container-fluid__content grid wide">
-                    <p>Premium</p>
-                    <p>Quanlity</p>
+                    <p data-aos="fade-down">Premium</p>
+                    <p data-aos="fade-down" data-aos-delay="300">Quanlity</p>
                     <div class="container-fluid__content-title">
-                        <p>Thành</p>
-                        <p>Restaurant</p>
+                        <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">Thành</p>
+                        <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">Restaurant</p>
                     </div>
                     <div class="container-fluid__content-title-btn">
-                        <a class="btn-color container-fluid-btn"href="">Đặt bàn</a>
+                        <a class="btn-color container-fluid-btn"href="">Book</a>
                     </div>
                 </div>
                 
@@ -94,28 +103,28 @@
             <!-- about -->
             <section class="about">
                 <div class="grid wide">
-                    <div class="grid__row">
-                        <div class="about-img col l-3">
+                    <div class="row">
+                        <div class="about-img col l-3" data-aos="fade-right">
                             <img src="assets/img/about-01.jpg" alt="">
                         </div>
-                        <div class="about__content col l-6">
+                        <div class="about__content col l-6" data-aos="fade-up" data-aos-offset="250">
                             <div class="about__content-intro">
                                 <h2>
-                                    Chào Mừng Bạn Đến Với
+                                    Welcome to
                                     <br>
                                     <span>Thành Restaurant</span>
                                 </h2>
                             </div>
                             <div class="about__content-details">
                                 <p>
-                                    Đến với Thành Restaurant cùng không gian lịch sự thực khách không những ăn ngon thưởng thức nghệ thuật ẩm thực với các món ăn từ Tây sang Á mà còn đảm bảo vệ sinh an toàn sức khỏe tuyệt đối là sự lựa chọn hoàn hảo cho quý khách hàng muốn tổ chức đặt tiệc sinh nhật, đặt tiệc cho công ty, đặt tiệc hội họp bạn bè, đặt tiệc cho tour khách tham quan du lịch.
+                                    Coming to Thanh Restaurant with a polite space, diners not only enjoy delicious food, enjoy culinary art with dishes from Western to Asian, but also ensure absolute hygiene, safety and health is the perfect choice for you. Customers want to organize a birthday party, book a party for the company, book a meeting with friends, book a party for a tourist tour.
                                 </p>
                             </div>
                             <div class="about__content-book">
-                                <a class="btn-color about__content-book-btn" href="">Đặt bàn</a>
+                                <a class="btn-color about__content-book-btn" href="">Book</a>
                             </div>
                         </div>
-                        <div class="about-img col l-3 ">
+                        <div class="about-img col l-3 " data-aos="fade-left">
                             <img src="assets/img/about-02.jpg" alt="">
                         </div>
                     </div>
@@ -124,34 +133,308 @@
             <!-- close about -->
     
             <!-- qoute -->
-            <section class="qoute">
-    
+            <section class="qoute" data-aos="fade-up">
+                <div class="qoute__details">
+                    <h3>"If you want to become a great chef, you have to work with great chefs. And that’s exactly what I did."</h3>
+                    <h3>Gordon Ramsay</h3>
+                </div>
+                <div class="qoute__details">
+                    <h3>"Cooking is like love. It should be entered into with abandon or not at all."</h3>
+                    <h3>Harriet Van Horne</h3>
+                </div>
+                <div class="qoute__details">
+                    <h3>"People who love to eat are always the best people."</h3>
+                    <h3>Julia Child</h3>
+                </div>
+                <div class="qoute__details">
+                    <h3>"We all eat, an it would be a sad waste of opportunity to eat badly."</h3>
+                    <h3>Anna Thomas</h3>
+                </div>
+                <div class="qoute__details">
+                    <h3>"The only time to eat diet food is while you're waiting for the steak to cook."</h3>
+                    <h3>Julia Child</h3>
+                </div>
             </section>
             <!-- close qoute -->
-    
-            <!-- menu -->
-            <section class="menu">
-    
-            </section>
-            <!-- close menu -->
-    
+
             <!-- food photo -->
-            <section class="food-photo">
-    
+            <section class="food-photo grid wide">
+                <h2>Ảnh nhà hàng</h2>
+                <div class="food-photo__list row gallery">
+                    <div class="food-photo__list-img col l-4 " data-aos="zoom-in-down">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-down">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="food-photo__list-img col l-4" data-aos="zoom-in-down">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-right">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="food-photo__list-img col l-4" data-aos="zoom-in">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-left">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-up">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-up">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-up">
+                        <a href="assets/img/gallery-img-01.jpg">
+                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
             </section>
             <!-- close food photo -->
     
+            <!-- statistical -->
+            <section class="statistical">
+                <div class="grid wide">
+                    <div class="statistical-list row">
+                        <div class="statistical-list__item col l-3">
+                            <div class="statistical-list__item--left">
+                                30
+                            </div>
+                            <div class="statistical-list__item--right">
+                                <p>Năm</p>
+                                <p>Kinh nghiệm</p>
+                            </div>
+                        </div>
+                        <div class="statistical-list__item col l-3">
+                            <div class="statistical-list__item--left">
+                                30
+                            </div>
+                            <div class="statistical-list__item--right">
+                                <p>Năm</p>
+                                <p>Kinh nghiệm</p>
+                            </div>
+                        </div>
+                        <div class="statistical-list__item col l-3">
+                            <div class="statistical-list__item--left">
+                                30
+                            </div>
+                            <div class="statistical-list__item--right">
+                                <p>Năm</p>
+                                <p>Kinh nghiệm</p>
+                            </div>
+                        </div>
+                        <div class="statistical-list__item col l-3">
+                            <div class="statistical-list__item--left">
+                                30
+                            </div>
+                            <div class="statistical-list__item--right">
+                                <p>Năm</p>
+                                <p>Kinh nghiệm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- close statistical -->
+
             <!-- comments customer -->
-            <div class="comments">
-    
+            <div class="comments grid wide">
+                <div class="comments-wrap row">
+                    <header class="comments__header col l-12">
+                        <h2>Nhận xét của khách hàng</h2>
+                    </header>
+                    <div class="comments__reviews col l-10">
+                        <div class="comments__reviews-list row">
+                            <div class="comments__reviews-img col l-12">
+                                <img src="assets/img/quotations-button.png" alt="">
+                            </div>
+                            <div class="comments__reviews-info col l-12">
+                                <h3>Việt đĩ - Hoàng Việt</h3>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <p>Nhà hàng này không biết có tuyển đĩ vào làm không! Có cho em sờ lót ahihi</p>
+                            </div>
+                        </div>
+                        <div class="comments__reviews-list row">
+                            <div class="comments__reviews-img col l-12">
+                                <img src="assets/img/quotations-button.png" alt="">
+                            </div>
+                            <div class="comments__reviews-info col l-12">
+                                <h3>User</h3>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <p>Nhà hàng quá đẹp, nhân viên nhiệt tình!</p>
+                            </div>
+                        </div>
+                        <div class="comments__reviews-list row">
+                            <div class="comments__reviews-img col l-12">
+                                <img src="assets/img/quotations-button.png" alt="">
+                            </div>
+                            <div class="comments__reviews-info col l-12">
+                                <h3>User</h3>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <p>Nhà hàng quá đẹp, nhân viên nhiệt tình!</p>
+                            </div>
+                        </div>
+                        <div class="comments__reviews-list row">
+                            <div class="comments__reviews-img col l-12">
+                                <img src="assets/img/quotations-button.png" alt="">
+                            </div>
+                            <div class="comments__reviews-info col l-12">
+                                <h3>User</h3>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <p>Nhà hàng quá đẹp, nhân viên nhiệt tình!</p>
+                            </div>
+                        </div>
+                        <div class="comments__reviews-list row">
+                            <div class="comments__reviews-img col l-12">
+                                <img src="assets/img/quotations-button.png" alt="">
+                            </div>
+                            <div class="comments__reviews-info col l-12">
+                                <h3>User</h3>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>
+                                <i class="comments__reviews-info__rating fas fa-star"></i>  
+                                <p>Nhà hàng quá đẹp, nhân viên nhiệt tình!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- close comments -->
     
+            <!-- Map -->
+            <!-- <section class="map grid wide">
+                <div class="row">
+                    <div class="col l-12 map__crop">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.1620072193236!2d107.59207190057991!3d16.4591231284939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13f462a1445%3A0x1b70ba6cb49fb526!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIEh14bq_!5e0!3m2!1svi!2s!4v1627318185334!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </section> -->
+            <!-- Close map -->
+            
             <!-- footer -->
             <footer class="footer">
-    
+                <div class="footer__top " data-aos="fade-up">
+                    <div class="footer-wrap">
+                        <div class="grid wide">
+                            <div class="footer__contents row">
+                                <div class="footer__contents-about col l-4">
+                                    <div class="footer__contents-about-title">
+                                        <h3>Về chúng tôi</h3>
+                                    </div>
+                                    <div class="footer__contents-about-details">
+                                        <p>
+                                            Sự hài lòng của quý khách là niềm vinh hạnh của chúng tôi. Chúc quý khách có 1 bữa tiệc ngon miệng, chúng tôi luôn đồng hành và phục vụ hết mình. Xin cảm ơn !!!
+                                        </p>
+                                        <ul class="footer__contents-about-details--social">
+                                            <li>
+                                                <a href="" class="btn-footer">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-footer">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-footer">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer__contents-info col l-8-3">
+                                    <div class="footer__contents-about-title">
+                                        <h3>Đăng ký nhận thông tin</h3>
+                                    </div>
+                                    <div class="footer__contents-about-details">
+                                        <!-- input email and button -->
+                                       
+                                    </div>
+                                </div>
+                                <div class="footer__contents-contact col l-8-3">
+                                    <div class="footer__contents-about-title">
+                                        <h3>Thông Tin Liên Lạc</h3>
+                                    </div>
+                                    <div class="footer__contents-about-details">
+                                        <p>77 Nguyễn Huệ, phường Phú Nhuận, Thành phố Huế, Thừa Thiên Huế</p>
+                                        <p>+84 702291317</p>
+                                        <p>Vovanthanhk42cntt@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer__contents-contact col l-8-3">
+                                    <div class="footer__contents-about-title">
+                                        <h3>Giờ mở cửa</h3>
+                                    </div>
+                                    <div class="footer__contents-about-details footer__contents-about-details--open">
+                                        <p>
+                                            Weekday: 9:30 AM - 10:00 PM
+                                        </p> 
+                                        <p>
+                                            Weekend: 8:30 AM - 11:00 PM
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>Copyright &copy; 2021 Restaurant Information page </p>
+                    <p>Designed by Thành não heo :(((</p>
+                    <a id="go-to-top" href="#goback"><i class="fas fa-angle-up"></i></a>
+                </div>
             </footer>
             <!-- close footer -->
         </div>
+
+        <!-- Load JS -->
+
+        <!-- Slide js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/baguetteBox.min.js"></script> 
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- Animation js -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- All JS -->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
