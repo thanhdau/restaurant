@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant - Menu</title>
+        <!-- Animation css -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        
+        <!-- Slide show -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/animation.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/slideslick.css">
+        <link rel="stylesheet" href="assets/css/grid.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+        <div class="grid" style="overflow:hidden">
+            <!-- Header -->
+            <header class="header fixed-top">
+                <div class="nav">
+                    <!-- Nav PC -->
+                    <div class="navbar grid wide row ">
+                        <!-- navbar_left  -->
+                        <div class="navbar__left">
+                            <a href="" class="navbar__left-logo">
+                                <img src="assets/img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+        
+                        <!-- navbar right -->
+                        <div class="navbar__right hide-on-mobile-tablet">
+                            <ul class="navbar__right-list">
+                                <li>
+                                    <a class="" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="" href="menu.html">Menu</a>
+                                </li>
+                                <li>
+                                    <a class="active" href="">Book</a>
+                                </li>
+                                <li>
+                                    <a href="">News - Promotion</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+                                <li class="navbar__right-list-menu">
+                                    <a href="">Other
+                                        <i class="navbar__right-list-menu-icon fas fa-sort-down"></i>
+                                    </a>
+                                    <ul class="nav-list__menu">
+                                        <li><a href="">Images</a></li>
+                                        <li><a href="">About Us</a></li>
+                                        <li><a href="">Chef</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Nav mobile - tablet  -->
+                    <div class="navbar-swap">
+                        <label for="navbar-btn--input" class="navbar-btn display-on-mobile-tablet">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <input type="checkbox" name="btn" id="navbar-btn--input" class="navbar-input" hidden>
+                        <label for="navbar-btn--input" class="navbar__overlay"></label>
+                        <nav class="navbar-moble-tablet">
+                            <label for="navbar-btn--input" class="navbar-btn--close">
+                                Close
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <ul class="navbar-list">
+                                <li>
+                                    <a class="navbar-link" href="">
+                                        <i class="fas fa-home"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active navbar-link" href="">
+                                        <i class="fas fa-list"></i>
+                                        Menu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-chair"></i>
+                                        Book
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="far fa-newspaper"></i>
+                                        News - Promotion
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-phone-volume"></i>
+                                        Contact
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-id-card-alt"></i>
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-chess-queen"></i>
+                                        Chef
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- close header -->
+    
+            <!-- container-slider -->
+            <section class="container-fluid--bg">
+               <div class="container-fluid--bg__content grid wide">
+                   <h1 class="header-page">Book A Table</h1>
+               </div>
+            </section>
+            <!-- close container-slider -->
+            
+            <!-- Book a table -->
+            <section class="grid wide">
+                <header class="headline">
+                    <h2>Book A Table</h2>
+                    <p>
+                        Please choose the right time
+                    </p>
+                </header>
+                <form action="" class="book-a-table row">
+                    <div class="book-a-table__input col l-6">
+                        <h3>Enter date and time information</h3>
+                        <div class="row">
+                            <div class="form-group col l-12">
+                                <label for="date" class="form-label">
+                                    Choose a date
+                                    (<span class="required">*</span>)
+                                </label>
+                                <input id="date" name="date" type="date" class="form-control"></input>
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group col l-12">
+                                <label for="hours" class="form-label">
+                                    Choose a time
+                                    (<span class="required">*</span>)
+                                </label>
+                                <input type="time" class="form-control">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group col l-12">
+                                <lable class="form-label">
+                                    Number of people
+                                    (<span class="required">*</span>)
+                                </lable>
+                                <select name="" id="persons" class="form-control">
+                                    <option value="numOfPerson">1 người</option>
+                                    <option value="numOfPerson">2 người</option>
+                                    <option value="numOfPerson">3 người</option>
+                                    <option value="numOfPerson">4 người</option>
+                                    <option value="numOfPerson">5 người</option>
+                                    <option value="numOfPerson">Trên 5 người</option>
+                                    <option value="numOfPerson">Trên 10 người</option>
+                                    <option value="numOfPerson">Trên 15 người</option>
+                                    <option value="numOfPerson">Trên 25 người</option>
+                                    <option value="numOfPerson">Trên 30 người</option>
+                                    <option value="numOfPerson">Trên 35 người</option>
+                                    <option value="numOfPerson">Trên 40 người</option>
+                                    <option value="numOfPerson">Trên 50 người</option>
+                                </select>
+                                <span class="form-message"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-a-table__info col l-6">
+                        <h3>Contact Information</h3>
+                        <div class="row">
+                            <div class="form-group col l-12">
+                                <lable class="form-label">
+                                    Full Name
+                                    (<span class="required">*</span>)
+                                </lable>
+                                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="EX: Võ Văn Thành">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group col l-12">
+                                <lable class="form-label">
+                                    Your Address
+                                    (<span class="required">*</span>)
+                                </lable>
+                                <input type="text" id="address" name="address" class="form-control" placeholder="EX: 77 Nguyễn Huệ">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-group col l-12">
+                                <lable class="form-label">
+                                    Your Phone Number
+                                    (<span class="required">*</span>)
+                                </lable>
+                                <input type="number" id="phone" name="phone" class="form-control">
+                                <span class="form-message"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-a-table__submit col l-2">
+                        <button class="form-submit">Book</button>
+                    </div>
+                </form>
+            </section>
+            <!-- Close book -->
+
+            <!-- footer -->
+            <footer class="footer">
+                <div class="footer__top " >
+                    <div class="footer-wrap">
+                        <div class="grid wide">
+                            <div class="footer__contents row">
+                                <div class="footer__contents-about col footer__contents-items  l-4 m-6 s-12">
+                                    <div class="footer__contents-about-title">
+                                        <img src="assets/img/logo.png" alt="">
+                                    </div>
+                                    <div class="footer__contents-about-details">
+                                        <p>
+                                            Your satisfaction is our honor. Wish you have a delicious party, we always accompany and serve our best. Thank you !!!
+                                        </p>
+                                        <ul class="footer__contents-about-details--social">
+                                            <li>
+                                                <a href="" class="btn-footer">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-footer">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="btn-footer">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer__contents-info col footer__contents-items l-8-3 m-6 s-12">
+                                    <div class="footer__contents-about-title">
+                                        <h3>Đăng ký nhận thông tin</h3>
+                                    </div>
+                                    <div class="footer__contents-about-details">
+                                        <!-- input email and button -->
+                                       
+                                    </div>
+                                </div>
+                                <div class="footer__contents-contact footer__contents-items col l-8-3 m-6 s-12">
+                                    <div class="footer__contents-about-title">
+                                        <h3>Thông Tin Liên Lạc</h3>
+                                    </div>
+                                    <div class="footer__contents-about-details">
+                                        <p>77 Nguyễn Huệ, phường Phú Nhuận, Thành phố Huế, Thừa Thiên Huế</p>
+                                        <p>+84 702291317</p>
+                                        <p>Vovanthanhk42cntt@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer__contents-contact footer__contents-items col l-8-3 m-6 s-12">
+                                    <div class="footer__contents-about-title">
+                                        <h3>Giờ mở cửa</h3>
+                                    </div>
+                                    <div class="footer__contents-about-details footer__contents-about-details--open">
+                                        <p>
+                                            Weekday: 9:30 AM - 10:00 PM
+                                        </p> 
+                                        <p>
+                                            Weekend: 8:30 AM - 11:00 PM
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>Copyright &copy; 2021 Restaurant Information page </p>
+                    <p>Designed by Thành não heo :(((</p>
+                    <a id="go-to-top" href="#goback"><i class="fas fa-angle-up"></i></a>
+                </div>
+            </footer>
+            <!-- close footer -->
+        </div>
+
+        <!-- Load JS -->
+
+        <!-- Slide js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/baguetteBox.min.js"></script> 
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- Animation js -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- All JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

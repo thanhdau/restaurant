@@ -1,131 +1,261 @@
-/* col - column
-    s - small (mobile)
-    m - medium (tablet)
-    l - large (pc)
-    o -offset */
+/* Mobile and tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    
+    .display-on-mobile-tablet{
+        display: block !important;
+    }
+    
+    .nav{
+        padding: 0.8rem 0;
+    }
 
-.grid{
-    width: 100%;
+    /* Container */
+}
+
+/* Navbar mobile tablet */
+.navbar-swap > i {
+    transform: rotate(0);
+    transition: transform 0.5s;
+}
+
+.navbar-swap > i:hover{
+    transform: rotate(180deg);
+}
+
+.navbar-btn{
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top: 23px;
+    right: 11vw;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+
+.navbar__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    animation: fadeIn ease 0.3s;
+}
+
+.navbar-input:checked ~ .navbar__overlay {
     display: block;
-    padding: 0;
-    /* margin: 0 auto; */
 }
 
-.grid.wide{
-    max-width: 1200px;
-    margin: 0 auto;
+
+.navbar-moble-tablet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all ease 0.3s;
+    background: var(--while-color);
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -4px;
-    margin-right: -4px;
+.navbar-input:checked ~ .navbar-moble-tablet {
+    transform: translateX(0);
+    opacity: 1;
 }
 
-.col{
-    padding-left: 4px;
-    padding-right: 4px;
+
+.navbar-btn--close {
+    position: absolute;
+    top: 2rem;
+    right: 1.4rem;
+    width: 90%;
+    height: 3rem;
+    color: var(--black-color);
+    cursor: pointer;
+    font-size: 3rem;
+    text-align: center;
 }
-/* PC medium */
-@media (min-width: 1024px)
-{
-    .row{
-        margin-left: -12px;
-        margin-right: -12px
-    }
+  
+.navbar-list {
+    margin-top: 6rem;
+    margin-top: 79px;
+}
 
-    .col{
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .l-1 {
-        flex: 0 0 8.33333%;
-        max-width: 8.33333%;
-    }
-    .l-2 {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
-    }
-    .l-2-4 {
-        flex: 0 0 20%;
-        max-width: 20%;
-    }
-    .l-3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-    .l-4 {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-    .l-5 {
-        flex: 0 0 41.66667%;
-        max-width: 41.66667%;
-    }
-    .l-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .l-7 {
-        flex: 0 0 58.33333%;
-        max-width: 58.33333%;
-    }
-    .l-8 {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
-    }
-
-    .l-8-3{
-        flex: 0 0 22.2223%;
-        max-width: 22.2223%;
-    }
-
-    .l-9 {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-    .l-10 {
-        flex: 0 0 83.33333%;
-        max-width: 83.33333%;
-    }
-    .l-11 {
-        flex: 0 0 91.66667%;
-        max-width: 91.66667%;
-    }
-    .l-12 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+  
+.navbar-link {
+    display: block;
+    color: var(--black-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+  
+.navbar-link:not(.exit-overlay) {
+    padding: 2rem 0;
+}
+  
+.navbar-list li:hover {
+    background: var(--gray-color);
+}
+  
+.navbar-link i{
+    margin: 0 2rem; 
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+  
+.exit-overlay label {
+    display: block;
+    cursor: pointer;
 }
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1023px)
-{
-    .row {
-        margin-left: -8px;
-        margin-right: -8px;
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
     }
 
-    .col {
-        padding-left: 8px;
-        padding-right: 8px;
-
+    /* nav */
+    .navbar-link i {
+        margin: 0 2rem 0 4rem;
     }
     
-    .m-0 {
-     display: none;
+    .exit-overlay label {
+        padding: 2rem 0;
     }
 
-    .m-3{
-        flex: 0 0 25%;
-        max-width: 25%;
+    .footer__contents-contact{
+        padding-top: 3rem;        
+    }
+
+    .statistical-list__item{
+        padding: 22px 20%;
+        margin: 0 auto;
     }
 }
 
-/* Mobile */
-@media (max-width: 739px)
-{
+/*Mobile*/
+@media (max-width: 739px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  
+    .navbar-moble-tablet {
+      width: 100%;
+    }
+
+    /* navbar */
+    .header{
+        border-radius: unset !important;
+    }
+
+    .navbar__left img{
+        width: 10rem;
+        height: 5rem;
+        margin-left: 1rem;
+    }
+
+    .navbar-btn {
+        right: 5vw;
+    }
+
+    .navbar-input:checked ~ .navbar-moble-tablet {
+        color: var(--while-color);
+        background: var(--overlay-mobile-color);
+    }
     
+      .navbar-btn--close {
+        color: var(--while-color);
+    }
+    
+    .navbar-list {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .navbar-list li:hover {
+        background: unset;
+    }
+    
+    .navbar-list a {
+        border-radius: 1rem;
+        margin-left: 0;
+        white-space: nowrap;
+        color: var(--while-color);
+    }
+    
+    .navbar-list a:not(.exit-overlay) {
+        padding: 2rem 1.5rem;
+    }
+    
+    .navbar-link i {
+        margin: 0 2rem 0 1rem;
+    }
+    
+    .exit-overlay label {
+        padding: 2rem 1.5rem;
+    }
+
+    /*  qoute*/
+    .qoute {
+        padding: 6rem 0;
+    }
+    
+    .qoute__details h3 {
+        font-size: unset;
+        line-height: unset;
+    }
+
+    /* footer */
+    .footer {
+        text-align: center;
+    }
+
+    .footer__contents-about-details{
+        text-align: unset;
+    }
+
+    .footer__contents-about-title h3::after{
+        left: 50% !important;
+        width: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .footer__contents-about col{
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-left: 25%;
+    }
+
+    .footer__contents-about-title{
+        padding-top: 1rem;
+    }
+
+    .footer__contents-contact{
+        padding-top: 1rem;        
+    }
+
+    /* statistical */
+    .statistical-list__item{
+        font-size: 14px;
+        padding: 5px 18%;
+        display: flex;
+        align-items: center;
+    }
+
+    .statistical-list__item--left{
+        font-size: 40px;
+        padding-left: 20px;
+        line-height: normal;
+    }
 }

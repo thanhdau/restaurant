@@ -9,7 +9,17 @@
     --secondary-color: #0084ff;
 
     --star-gold-color: #FFCE3E;
+    --overlay-mobile-color: #000000e0;
+
+    --error-color: #f33a58;
+    --gray-input-color: #b3b3b3;
 }
+
+a.active{
+    color: var(--while-color);
+    background: var(--primary-color);
+}
+
 
 *{
     box-sizing: border-box;

@@ -23,15 +23,17 @@
         <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="assets/css/animation.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/base.css">
         <link rel="stylesheet" href="assets/css/slideslick.css">
+        <link rel="stylesheet" href="assets/css/grid.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
-        <div class="grid">
+        <div class="grid" style="overflow:hidden">
             <!-- Header -->
             <header class="header fixed-top">
                 <div class="nav">
+                    <!-- Nav PC -->
                     <div class="navbar grid wide row ">
                         <!-- navbar_left  -->
                         <div class="navbar__left">
@@ -41,16 +43,16 @@
                         </div>
         
                         <!-- navbar right -->
-                        <div class="navbar__right">
+                        <div class="navbar__right hide-on-mobile-tablet">
                             <ul class="navbar__right-list">
                                 <li>
-                                    <a class="home" href="">Home</a>
+                                    <a class="active" href="">Home</a>
                                 </li>
                                 <li>
-                                    <a href="">Menu</a>
+                                    <a href="menu.html">Menu</a>
                                 </li>
                                 <li>
-                                    <a href="">Book</a>
+                                    <a href="book.html">Book</a>
                                 </li>
                                 <li>
                                     <a href="">News - Promotion</a>
@@ -70,6 +72,65 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+
+                    <!-- Nav mobile - tablet  -->
+                    <div class="navbar-swap">
+                        <label for="navbar-btn--input" class="navbar-btn display-on-mobile-tablet">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <input type="checkbox" name="btn" id="navbar-btn--input" class="navbar-input" hidden>
+                        <label for="navbar-btn--input" class="navbar__overlay"></label>
+                        <nav class="navbar-moble-tablet">
+                            <label for="navbar-btn--input" class="navbar-btn--close">
+                                Close
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <ul class="navbar-list">
+                                <li>
+                                    <a class="active navbar-link" href="">
+                                        <i class="fas fa-home"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-list"></i>
+                                        Menu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-chair"></i>
+                                        Book
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="far fa-newspaper"></i>
+                                        News - Promotion
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-phone-volume"></i>
+                                        Contact
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-id-card-alt"></i>
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="navbar-link">
+                                        <i class="fas fa-chess-queen"></i>
+                                        Chef
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </header>
@@ -104,10 +165,10 @@
             <section class="about">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="about-img col l-3" data-aos="fade-right">
+                        <div class="about-img col l-3 m-3 s-0" data-aos="fade-right">
                             <img src="assets/img/about-01.jpg" alt="">
                         </div>
-                        <div class="about__content col l-6" data-aos="fade-up" data-aos-offset="250">
+                        <div class="about__content col l-6 m-6 s-12" data-aos="fade-up" data-aos-offset="250">
                             <div class="about__content-intro">
                                 <h2>
                                     Welcome to
@@ -124,7 +185,7 @@
                                 <a class="btn-color about__content-book-btn" href="">Book</a>
                             </div>
                         </div>
-                        <div class="about-img col l-3 " data-aos="fade-left">
+                        <div class="about-img col l-3 m-3 s-0" data-aos="fade-left">
                             <img src="assets/img/about-02.jpg" alt="">
                         </div>
                     </div>
@@ -159,51 +220,51 @@
 
             <!-- food photo -->
             <section class="food-photo grid wide">
-                <h2>Ảnh nhà hàng</h2>
+                <h2>Restaurant Photo</h2>
                 <div class="food-photo__list row gallery">
-                    <div class="food-photo__list-img col l-4 " data-aos="zoom-in-down">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-12" data-aos="zoom-in-down">
+                        <a href="assets/img/food-photo-01.jpg">
+                            <img src="assets/img/food-photo-01.jpg" alt="">
                         </a>
                     </div>
-                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-down">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-6" data-aos="zoom-out-down">
+                        <a href="assets/img/food-photo-02.jpg">
+                            <img src="assets/img/food-photo-02.jpg" alt="">
                         </a>
                     </div>
-                    <div class="food-photo__list-img col l-4" data-aos="zoom-in-down">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-6" data-aos="zoom-in-down">
+                        <a href="assets/img/food-photo-03.jpg">
+                            <img src="assets/img/food-photo-03.jpg" alt="">
                         </a>
                     </div>
-                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-right">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-12" data-aos="zoom-out-right">
+                        <a href="assets/img/food-photo-04.jpg">
+                            <img src="assets/img/food-photo-04.jpg" alt="">
                         </a>
                     </div>
-                    <div class="food-photo__list-img col l-4" data-aos="zoom-in">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-6" data-aos="zoom-in">
+                        <a href="assets/img/food-photo-05.jpg">
+                            <img src="assets/img/food-photo-05.jpg" alt="">
                         </a>
                     </div>
-                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-left">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-6" data-aos="zoom-out-left">
+                        <a href="assets/img/food-photo-06.jpg">
+                            <img src="assets/img/food-photo-06.jpg" alt="">
                         </a>
                     </div>
-                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-up">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-12" data-aos="zoom-out-up">
+                        <a href="assets/img/food-photo-07.jpg">
+                            <img src="assets/img/food-photo-07.jpg" alt="">
                         </a>
                     </div>
-                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-up">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-6" data-aos="zoom-out-up">
+                        <a href="assets/img/gallery-img-02.jpg">
+                            <img src="assets/img/gallery-img-02.jpg" alt="">
                         </a>
                     </div>
-                    <div class="food-photo__list-img col l-4" data-aos="zoom-out-up">
-                        <a href="assets/img/gallery-img-01.jpg">
-                            <img src="assets/img/gallery-img-01.jpg" alt="">
+                    <div class="food-photo__list-img col l-4 m-16 s-6" data-aos="zoom-out-up">
+                        <a href="assets/img/gallery-img-04">
+                            <img src="assets/img/gallery-img-04.jpg" alt="">
                         </a>
                     </div>
                 </div>
@@ -214,40 +275,40 @@
             <section class="statistical">
                 <div class="grid wide">
                     <div class="statistical-list row">
-                        <div class="statistical-list__item col l-3">
+                        <div class="statistical-list__item col l-3 m-12 s-12">
                             <div class="statistical-list__item--left">
-                                30
+                                10
                             </div>
                             <div class="statistical-list__item--right">
                                 <p>Năm</p>
-                                <p>Kinh nghiệm</p>
+                                <p>Hình thành và phát triển</p>
                             </div>
                         </div>
-                        <div class="statistical-list__item col l-3">
+                        <div class="statistical-list__item col l-3 m-12 s-12">
                             <div class="statistical-list__item--left">
-                                30
+                                02
                             </div>
                             <div class="statistical-list__item--right">
-                                <p>Năm</p>
-                                <p>Kinh nghiệm</p>
+                                <p>Cơ sở</p>
+                                <p>Nhà hàng</p>
                             </div>
                         </div>
-                        <div class="statistical-list__item col l-3">
+                        <div class="statistical-list__item col l-3 m-12 s-12">
                             <div class="statistical-list__item--left">
                                 30
                             </div>
                             <div class="statistical-list__item--right">
-                                <p>Năm</p>
-                                <p>Kinh nghiệm</p>
+                                <p>Đầu bếp</p>
+                                <p>Hàng đầu thế giới</p>
                             </div>
                         </div>
-                        <div class="statistical-list__item col l-3">
+                        <div class="statistical-list__item col l-3 m-12 s-12">
                             <div class="statistical-list__item--left">
-                                30
+                                05
                             </div>
                             <div class="statistical-list__item--right">
                                 <p>Năm</p>
-                                <p>Kinh nghiệm</p>
+                                <p>Kinh nghiệm của đầu bếp</p>
                             </div>
                         </div>
                     </div>
@@ -258,8 +319,8 @@
             <!-- comments customer -->
             <div class="comments grid wide">
                 <div class="comments-wrap row">
-                    <header class="comments__header col l-12">
-                        <h2>Nhận xét của khách hàng</h2>
+                    <header class="comments__header col l-12 m-12 s-12">
+                        <h2>Customer Reviews</h2>
                     </header>
                     <div class="comments__reviews col l-10">
                         <div class="comments__reviews-list row">
@@ -350,17 +411,17 @@
             
             <!-- footer -->
             <footer class="footer">
-                <div class="footer__top " data-aos="fade-up">
+                <div class="footer__top " >
                     <div class="footer-wrap">
                         <div class="grid wide">
                             <div class="footer__contents row">
-                                <div class="footer__contents-about col l-4">
+                                <div class="footer__contents-about col footer__contents-items  l-4 m-6 s-12">
                                     <div class="footer__contents-about-title">
-                                        <h3>Về chúng tôi</h3>
+                                        <img src="assets/img/logo.png" alt="">
                                     </div>
                                     <div class="footer__contents-about-details">
                                         <p>
-                                            Sự hài lòng của quý khách là niềm vinh hạnh của chúng tôi. Chúc quý khách có 1 bữa tiệc ngon miệng, chúng tôi luôn đồng hành và phục vụ hết mình. Xin cảm ơn !!!
+                                            Your satisfaction is our honor. Wish you have a delicious party, we always accompany and serve our best. Thank you !!!
                                         </p>
                                         <ul class="footer__contents-about-details--social">
                                             <li>
@@ -381,7 +442,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="footer__contents-info col l-8-3">
+                                <div class="footer__contents-info col footer__contents-items l-8-3 m-6 s-12">
                                     <div class="footer__contents-about-title">
                                         <h3>Đăng ký nhận thông tin</h3>
                                     </div>
@@ -390,7 +451,7 @@
                                        
                                     </div>
                                 </div>
-                                <div class="footer__contents-contact col l-8-3">
+                                <div class="footer__contents-contact footer__contents-items col l-8-3 m-6 s-12">
                                     <div class="footer__contents-about-title">
                                         <h3>Thông Tin Liên Lạc</h3>
                                     </div>
@@ -400,7 +461,7 @@
                                         <p>Vovanthanhk42cntt@gmail.com</p>
                                     </div>
                                 </div>
-                                <div class="footer__contents-contact col l-8-3">
+                                <div class="footer__contents-contact footer__contents-items col l-8-3 m-6 s-12">
                                     <div class="footer__contents-about-title">
                                         <h3>Giờ mở cửa</h3>
                                     </div>
