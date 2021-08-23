@@ -12,7 +12,22 @@
         padding: 0.8rem 0;
     }
 
-    /* Container */
+    /* map */
+    .map__crop{
+        padding: 0 30px;
+    }
+    /* news-promotion */
+    .new-promotion-left{
+        padding: 5rem 5rem 0;
+    }
+
+    .new-promotion-right{
+        padding: 5rem 5rem 0;
+    }
+
+    .partition{
+        display: none;
+    }
 }
 
 /* Navbar mobile tablet */

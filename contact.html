@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurant - Book</title>
+        <title>Restaurant - Contact</title>
         <!-- Animation css -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
         
         <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -54,20 +55,19 @@
                                     <a class="" href="menu.html">Menu</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="">Book</a>
+                                    <a href="book.html">Book</a>
                                 </li>
                                 <li>
-                                    <a href="new-promotion.html">News - Promotion</a>
+                                    <a  href="new-promotion.html">News - Promotion</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a class="active" href="">Contact</a>
                                 </li>
                                 <li class="navbar__right-list-menu">
-                                    <a href="">Other
+                                    <a href="javascript:;">Other
                                         <i class="navbar__right-list-menu-icon fas fa-sort-down"></i>
                                     </a>
                                     <ul class="nav-list__menu">
-                                        <li><a href="">Images</a></li>
                                         <li><a href="">About Us</a></li>
                                         <li><a href="">Chef</a></li>
                                     </ul>
@@ -140,145 +140,94 @@
     
             <!-- container-slider -->
             <section class="container-fluid--bg">
-               <div class="container-fluid--bg__content grid wide">
-                   <h1 class="header-page">Book A Table</h1>
-               </div>
-            </section>
+                <div class="container-fluid--bg__content grid wide">
+                    <h1 class="header-page">Contact</h1>
+                </div>
+             </section>
             <!-- close container-slider -->
             
-            <!-- Book a table -->
+            <!-- Contact -->
             <section class="grid wide">
-                <header class="headline">
-                    <h2>Book A Table</h2>
-                    <p>
-                        Please choose the right time
-                    </p>
-                </header>
-                <form action="" class="book-a-table row">
-                    <div class="book-a-table__input col l-6 m-6 s-12">
-                        <h3>Enter date and time information</h3>
-                        <div class="row">
-                            <div class="form-group col l-12 m-12 s-12">
-                                <label for="date" class="form-label">
-                                    Choose a date
-                                    (<span class="required">*</span>)
-                                </label>
-                                <input id="date" name="date" type="date" class="form-control"></input>
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <label for="hours" class="form-label">
-                                    Choose a time
-                                    (<span class="required">*</span>)
-                                </label>
-                                <input type="time" class="form-control">
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Number of people
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <select name="" id="persons" class="form-control">
-                                    <option value="numOfPerson">1 người</option>
-                                    <option value="numOfPerson">2 người</option>
-                                    <option value="numOfPerson">3 người</option>
-                                    <option value="numOfPerson">4 người</option>
-                                    <option value="numOfPerson">5 người</option>
-                                    <option value="numOfPerson">Trên 5 người</option>
-                                    <option value="numOfPerson">Trên 10 người</option>
-                                    <option value="numOfPerson">Trên 15 người</option>
-                                    <option value="numOfPerson">Trên 25 người</option>
-                                    <option value="numOfPerson">Trên 30 người</option>
-                                    <option value="numOfPerson">Trên 35 người</option>
-                                    <option value="numOfPerson">Trên 40 người</option>
-                                    <option value="numOfPerson">Trên 50 người</option>
-                                </select>
-                                <span class="form-message"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="book-a-table__info col l-6 m-6 s-12">
-                        <h3>Contact Information</h3>
-                        <div class="row">
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Full Name
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="EX: Võ Văn Thành">
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Your Address
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="text" id="address" name="address" class="form-control" placeholder="EX: 77 Nguyễn Huệ">
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Your Phone Number
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="number" id="phone" name="phone" class="form-control">
-                                <span class="form-message"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="book-a-table__submit col l-2 m-4 s-12">
-                        <button class="form-submit">Book</button>
-                    </div>
-                </form>
-            </section>
-            <!-- Close book -->
-
-             <!-- Map -->
-            <section class="map">
-                <div class="map-pad grid wide">
-                    <div class="row">
-                        <div class="col l-6 m-6 s-12 map__crop">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.1620072193236!2d107.59207190057991!3d16.4591231284939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13f462a1445%3A0x1b70ba6cb49fb526!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIEh14bq_!5e0!3m2!1svi!2s!4v1627318185334!5m2!1svi!2s" 
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                            </iframe>
-                        </div>
-                        <div class="map__contact col l-6 m-6">
+                <div class="contact row">
+                    <div class="col l-6">
+                        <div class="contact-left">
+                            <h2>Leave us a Comment</h2>
+                            <p>
+                                Receiving your comments is a pleasure of our restaurant. Thanks to that, we can improve the quality of the restaurant to serve you better
+                            </p>
                             <div class="row">
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="fas fa-phone-volume"></i>
-                                    </div>
-                                    <p>
-                                        <span>Phone</span>
-                                        <br>
-                                        +84 702291317
-                                    </p>
+                                <div class="form-group-contact col l-12 m-12 s-12">
+                                    <label class="form-label">
+                                        Name:
+                                    </label>
+                                    <input type="text" id="namecontact" name="namecontact" class="form-control">
                                 </div>
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <p>
-                                        <span>Email</span>
-                                        <br>vovanthanhk42cntt2gmail.com
-                                    </p>
+                                <div class="form-group-contact col l-12 m-12 s-12">
+                                    <label class="form-label">
+                                        Email:
+                                    </label>
+                                    <input type="email" id="emailcontact" name="emailcontact" class="form-control">
                                 </div>
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <p>
-                                        <span>Address</span>
-                                        <br>77 Nguyễn Huệ, P.Phú Nhuận,TP.Huế, Thừa Thiên Huế
-                                    </p>
+                                <div class="form-group-contact col l-12 m-12 s-12">
+                                    <label class="form-label">
+                                        Message:
+                                    </label>
+                                    <textarea type="text" id="messagecontact" rows="5" cols="75" name="messagecontact" class="form-control form-control__contact">
+                                    </textarea>
                                 </div>
                             </div>
+                            <div class="contact-left__submit col l-4">
+                                <button class="form-submit">Send now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 s-12">
+                        <div class="contact-right">
+                                <div class="contact-right__map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.1620072193236!2d107.59207190057991!3d16.4591231284939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13f462a1445%3A0x1b70ba6cb49fb526!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIEh14bq_!5e0!3m2!1svi!2s!4v1627318185334!5m2!1svi!2s" 
+                                    width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy">
+                                    </iframe>
+                                </div>
+                                <div class="contact-right-full">
+                                    <div class="contact-right__wrap col l-6">
+                                        <div class="contact-right__info">
+                                            <span class="contact-right__info-item">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                Address:
+                                            </span>
+                                            <p>77 Nguyễn Huệ</p>
+                                        </div>
+                                        <div class="contact-right__info">
+                                            <span class="contact-right__info-item">
+                                                <i class="fas fa-phone-volume"></i>
+                                                City:
+                                            </span>
+                                            <p>Huế City</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-right__wrap col l-6">
+                                        <div class="contact-right__info">
+                                            <span class="contact-right__info-item">
+                                                <i class="fas fa-phone-volume"></i>
+                                                Phone:
+                                            </span>
+                                            <p>+84 702291317</p>
+                                        </div>
+                                       
+                                        <div class="contact-right__info">
+                                            <span class="contact-right__info-item">
+                                                <i class="far fa-envelope"></i>
+                                                Email:
+                                            </span>
+                                            <p>18T1021287@husc.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Close map -->
+            <!-- end contact -->
             
             <!-- footer -->
             <footer class="footer">

@@ -13,6 +13,9 @@
 
     --error-color: #f33a58;
     --gray-input-color: #b3b3b3;
+
+    --shadow-color: #7f89a19a;
+    --gray-color: #cccbcb;
 }
 
 a.active{
