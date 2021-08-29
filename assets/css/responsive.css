@@ -28,6 +28,19 @@
     .partition{
         display: none;
     }
+
+    /* Contact */
+    .contact-left__submit .form-submit{
+        margin: 0 0 4rem 0;
+    }
+
+    .contact-right__map{
+        padding: 0 3rem;
+    }
+
+    .contact-right__wrap {
+        display: block;
+    }
 }
 
 /* Navbar mobile tablet */

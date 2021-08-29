@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurant - Book</title>
+        <title>Restaurant - Chef</title>
         <!-- Animation css -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
         
         <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -54,21 +55,21 @@
                                     <a class="" href="menu.html">Menu</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="book.html">Book</a>
+                                    <a href="book.html">Book</a>
                                 </li>
                                 <li>
-                                    <a href="new-promotion.html">News - Promotion</a>
+                                    <a  href="new-promotion.html">News - Promotion</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a  href="contact.html">Contact</a>
                                 </li>
                                 <li class="navbar__right-list-menu">
-                                    <a href="">Other
+                                    <a class="active" href="javascript:;">Other
                                         <i class="navbar__right-list-menu-icon fas fa-sort-down"></i>
                                     </a>
                                     <ul class="nav-list__menu">
                                         <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="chef.html">Chef</a></li>
+                                        <li><a class="active" href="chef.html">Chef</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -95,13 +96,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="navbar-link" href="menu.html">
+                                    <a class=" navbar-link" href="menu.html">
                                         <i class="fas fa-list"></i>
                                         Menu
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="book.html" class="navbar-link active">
+                                    <a href="book.html" class="navbar-link">
                                         <i class="fas fa-chair"></i>
                                         Book
                                     </a>
@@ -119,13 +120,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html" class="navbar-link">
+                                    <a href="about-us.html" class="navbar-link ">
                                         <i class="fas fa-id-card-alt"></i>
                                         About us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="chef.html" class="navbar-link">
+                                    <a href="chef.html" class="navbar-link active">
                                         <i class="fas fa-chess-queen"></i>
                                         Chef
                                     </a>
@@ -138,146 +139,140 @@
             <!-- close header -->
     
             <!-- container-slider -->
-            <section class="container-fluid--bg">
-               <div class="container-fluid--bg__content grid wide">
-                   <h1 class="header-page">Book A Table</h1>
-               </div>
-            </section>
+            <section class="container-fluid--bg container-fluid--bg__chef">
+                <div class="container-fluid--bg__content grid wide">
+                    <h1 class="header-page">Chef</h1>
+                </div>
+             </section>
             <!-- close container-slider -->
-            
-            <!-- Book a table -->
+            <!-- Chef -->
             <section class="grid wide">
-                <header class="headline" data-aos="flip-up">
-                    <h2>Book A Table</h2>
-                    <p>
-                        Please choose the right time
-                    </p>
-                </header>
-                <form action="javascript:void(0);" class="book-a-table row" id="form-1">
-                    <div class="book-a-table__input col l-6 m-6 s-12" data-aos="zoom-in">
-                        <h3>Enter date and time information</h3>
-                        <div class="row">
-                            <div class="form-group col l-12 m-12 s-12">
-                                <label for="date" class="form-label">
-                                    Choose a date
-                                    (<span class="required">*</span>)
-                                </label>
-                                <input id="date" name="date" type="date" class="form-control"></input>
-                                <span class="form-message"></span>
+                <div class="row container-chef">
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-09.jpg" alt="Christine Hà images">
+                                <!-- <ul class="social-items our-team__contact">
+                                    <li>
+                                        <a class="btn-footer" href="https://twitter.com/ThnhNam35638876" target="_blank">
+                                            <i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-footer" href="https://www.facebook.com/NguyenThanhNam1601"
+                                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-footer" href="https://www.instagram.com/yuuto2k1" target="_blank">
+                                            <i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-footer" href="#notlink">
+                                            <i class="fab fa-google" target="_blank"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-footer" href="https://github.com/nhokchibi365" target="_blank">
+                                            <i class="fab fa-github"></i></a>
+                                    </li>
+                                </ul> -->
                             </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <label for="hours" class="form-label">
-                                    Choose a time
-                                    (<span class="required">*</span>)
-                                </label>
-                                <input type="time" class="form-control">
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Number of people
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <select name="" id="persons" class="form-control">
-                                    <option value="numOfPerson">1 người</option>
-                                    <option value="numOfPerson">2 người</option>
-                                    <option value="numOfPerson">3 người</option>
-                                    <option value="numOfPerson">4 người</option>
-                                    <option value="numOfPerson">5 người</option>
-                                    <option value="numOfPerson">Trên 5 người</option>
-                                    <option value="numOfPerson">Trên 10 người</option>
-                                    <option value="numOfPerson">Trên 15 người</option>
-                                    <option value="numOfPerson">Trên 25 người</option>
-                                    <option value="numOfPerson">Trên 30 người</option>
-                                    <option value="numOfPerson">Trên 35 người</option>
-                                    <option value="numOfPerson">Trên 40 người</option>
-                                    <option value="numOfPerson">Trên 50 người</option>
-                                </select>
-                                <span class="form-message"></span>
+                            <div class="team-content">
+                                <h2 class="team-content__name">Christine Hà</h2>
+                                <p class="team-content__job">Executive Chef</p>
                             </div>
                         </div>
                     </div>
-                    <div class="book-a-table__info col l-6 m-6 s-12" data-aos="zoom-in">
-                        <h3>Contact Information</h3>
-                        <div class="row">
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Full Name
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="EX: Võ Văn Thành">
-                                <span class="form-message"></span>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-01.jpg" alt="James Oliver images">
                             </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Your Address
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="text" id="address" name="address" class="form-control" placeholder="EX: 77 Nguyễn Huệ">
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Your Phone Number
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="number" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
-                                <span class="form-message"></span>
+                            <div class="team-content">
+                                <h2 class="team-content__name">James Oliver</h2>
+                                <p class="team-content__job">Chef</p>
                             </div>
                         </div>
                     </div>
-                    <div class="book-a-table__submit col l-2 m-4 s-12" data-aos="fade-up" data-aos-offset="0">
-                        <button class="form-submit" onclick="bookCheck()">Book</button>
-                    </div>
-                </form>
-            </section>
-            <!-- Close book -->
-
-             <!-- Map -->
-            <section class="map">
-                <div class="map-pad grid wide">
-                    <div class="row">
-                        <div class="col l-6 m-6 s-12 map__crop"  data-aos="zoom-in">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.1620072193236!2d107.59207190057991!3d16.4591231284939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13f462a1445%3A0x1b70ba6cb49fb526!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIEh14bq_!5e0!3m2!1svi!2s!4v1627318185334!5m2!1svi!2s" 
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                            </iframe>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-02.jpg" alt="Gordon Ramsay images">
+                            </div>
+                            <div class="team-content">
+                                <h2 class="team-content__name">Gordon Ramsay</h2>
+                                <p class="team-content__job">Chef</p>
+                            </div>
                         </div>
-                        <div class="map__contact col l-6 m-6"  data-aos="zoom-in">
-                            <div class="row">
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="fas fa-phone-volume"></i>
-                                    </div>
-                                    <p>
-                                        <span>Phone</span>
-                                        <br>
-                                        +84 702291317
-                                    </p>
-                                </div>
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <p>
-                                        <span>Email</span>
-                                        <br>vovanthanhk42cntt2gmail.com
-                                    </p>
-                                </div>
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <p>
-                                        <span>Address</span>
-                                        <br>77 Nguyễn Huệ, P.Phú Nhuận,TP.Huế, Thừa Thiên Huế
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-03.jpg" alt="Bobby Flay images">
+                            </div>
+                            <div class="team-content">
+                                <h2 class="team-content__name">Bobby Flay</h2>
+                                <p class="team-content__job">Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-04.jpg" alt="Faul Bocuse images">
+                            </div>
+                            <div class="team-content">
+                                <h2 class="team-content__name">Faul Bocuse</h2>
+                                <p class="team-content__job">Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-05.jpg" alt="Cat Cora images">
+                            </div>
+                            <div class="team-content">
+                                <h2 class="team-content__name">Cat Cora</h2>
+                                <p class="team-content__job">Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-06.jpg" alt="Thomas Keller images">
+                            </div>
+                            <div class="team-content">
+                                <h2 class="team-content__name">Thomas Keller</h2>
+                                <p class="team-content__job">Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-07.jpg" alt="Heston Blumenthal images">
+                            </div>
+                            <div class="team-content">
+                                <h2 class="team-content__name">Heston Blumenthal</h2>
+                                <p class="team-content__job">Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="our-team">
+                            <div class="pic">
+                                <img src="assets/img/chef-img-08.jpg" alt="Jordi Cruz images">
+                            </div>
+                            <div class="team-content">
+                                <h2 class="team-content__name">Jordi Cruz</h2>
+                                <p class="team-content__job">Chef</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Close map -->
+            <!-- Close chef -->
+           
             
             <!-- footer -->
             <footer class="footer">
@@ -372,27 +367,5 @@
        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
        <!-- All JS -->
        <script src="assets/js/main.js"></script>
-       <script src="assets/js/form-validation.js"></script>
-
-       <script>
-           document.addEventListener('DOMContentLoaded',function() {
-               Validator({
-                   form: '#form-1',
-                   formGroupSelector: '.form-group',
-                   errorSelector: '.form-message',
-                   rules: [
-                       Validator.isRequired('#date','Please enter time'),
-                       Validator.isRequired('#fullname','Please enter your full name'),
-                       Validator.isRequired('#address','Please enter your address'),
-                       Validator.isRequired('#phone','Enter at least 10 characters'),
-                   ],
-                   onSubmit: function(data){
-                    //    call API
-                    console.log(data);
-                   }
-               })
-           }
-           )
-       </script>
     </body>
 </html>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurant - Book</title>
+        <title>Restaurant - About Us</title>
         <!-- Animation css -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
         
         <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -54,21 +55,21 @@
                                     <a class="" href="menu.html">Menu</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="book.html">Book</a>
+                                    <a href="book.html">Book</a>
                                 </li>
                                 <li>
-                                    <a href="new-promotion.html">News - Promotion</a>
+                                    <a  href="new-promotion.html">News - Promotion</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a  href="contact.html">Contact</a>
                                 </li>
                                 <li class="navbar__right-list-menu">
-                                    <a href="">Other
+                                    <a class="active" href="javascript:;">Other
                                         <i class="navbar__right-list-menu-icon fas fa-sort-down"></i>
                                     </a>
                                     <ul class="nav-list__menu">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="chef.html">Chef</a></li>
+                                        <li><a class="active" href="about-us.html">About Us</a></li>
+                                        <li><a  href="chef.html">Chef</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -95,13 +96,13 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="navbar-link" href="menu.html">
+                                    <a class=" navbar-link" href="menu.html">
                                         <i class="fas fa-list"></i>
                                         Menu
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="book.html" class="navbar-link active">
+                                    <a href="book.html" class="navbar-link">
                                         <i class="fas fa-chair"></i>
                                         Book
                                     </a>
@@ -119,7 +120,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html" class="navbar-link">
+                                    <a href="about-us.html" class="navbar-link active">
                                         <i class="fas fa-id-card-alt"></i>
                                         About us
                                     </a>
@@ -138,146 +139,145 @@
             <!-- close header -->
     
             <!-- container-slider -->
-            <section class="container-fluid--bg">
-               <div class="container-fluid--bg__content grid wide">
-                   <h1 class="header-page">Book A Table</h1>
-               </div>
-            </section>
+            <section class="container-fluid--bg container-fluid--bg__about-us">
+                <div class="container-fluid--bg__content grid wide">
+                    <h1 class="header-page">About Us</h1>
+                </div>
+             </section>
             <!-- close container-slider -->
-            
-            <!-- Book a table -->
-            <section class="grid wide">
-                <header class="headline" data-aos="flip-up">
-                    <h2>Book A Table</h2>
-                    <p>
-                        Please choose the right time
-                    </p>
-                </header>
-                <form action="javascript:void(0);" class="book-a-table row" id="form-1">
-                    <div class="book-a-table__input col l-6 m-6 s-12" data-aos="zoom-in">
-                        <h3>Enter date and time information</h3>
-                        <div class="row">
-                            <div class="form-group col l-12 m-12 s-12">
-                                <label for="date" class="form-label">
-                                    Choose a date
-                                    (<span class="required">*</span>)
-                                </label>
-                                <input id="date" name="date" type="date" class="form-control"></input>
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <label for="hours" class="form-label">
-                                    Choose a time
-                                    (<span class="required">*</span>)
-                                </label>
-                                <input type="time" class="form-control">
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Number of people
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <select name="" id="persons" class="form-control">
-                                    <option value="numOfPerson">1 người</option>
-                                    <option value="numOfPerson">2 người</option>
-                                    <option value="numOfPerson">3 người</option>
-                                    <option value="numOfPerson">4 người</option>
-                                    <option value="numOfPerson">5 người</option>
-                                    <option value="numOfPerson">Trên 5 người</option>
-                                    <option value="numOfPerson">Trên 10 người</option>
-                                    <option value="numOfPerson">Trên 15 người</option>
-                                    <option value="numOfPerson">Trên 25 người</option>
-                                    <option value="numOfPerson">Trên 30 người</option>
-                                    <option value="numOfPerson">Trên 35 người</option>
-                                    <option value="numOfPerson">Trên 40 người</option>
-                                    <option value="numOfPerson">Trên 50 người</option>
-                                </select>
-                                <span class="form-message"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="book-a-table__info col l-6 m-6 s-12" data-aos="zoom-in">
-                        <h3>Contact Information</h3>
-                        <div class="row">
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Full Name
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="EX: Võ Văn Thành">
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Your Address
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="text" id="address" name="address" class="form-control" placeholder="EX: 77 Nguyễn Huệ">
-                                <span class="form-message"></span>
-                            </div>
-                            <div class="form-group col l-12 m-12 s-12">
-                                <lable class="form-label">
-                                    Your Phone Number
-                                    (<span class="required">*</span>)
-                                </lable>
-                                <input type="number" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
-                                <span class="form-message"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="book-a-table__submit col l-2 m-4 s-12" data-aos="fade-up" data-aos-offset="0">
-                        <button class="form-submit" onclick="bookCheck()">Book</button>
-                    </div>
-                </form>
-            </section>
-            <!-- Close book -->
 
-             <!-- Map -->
-            <section class="map">
-                <div class="map-pad grid wide">
-                    <div class="row">
-                        <div class="col l-6 m-6 s-12 map__crop"  data-aos="zoom-in">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.1620072193236!2d107.59207190057991!3d16.4591231284939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a13f462a1445%3A0x1b70ba6cb49fb526!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIEh14bq_!5e0!3m2!1svi!2s!4v1627318185334!5m2!1svi!2s" 
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-                            </iframe>
-                        </div>
-                        <div class="map__contact col l-6 m-6"  data-aos="zoom-in">
-                            <div class="row">
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="fas fa-phone-volume"></i>
-                                    </div>
-                                    <p>
-                                        <span>Phone</span>
-                                        <br>
-                                        +84 702291317
-                                    </p>
-                                </div>
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <p>
-                                        <span>Email</span>
-                                        <br>vovanthanhk42cntt2gmail.com
-                                    </p>
-                                </div>
-                                <div class="map__contact-list col l-12 m-12">
-                                    <div class="map__contact-list--item">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <p>
-                                        <span>Address</span>
-                                        <br>77 Nguyễn Huệ, P.Phú Nhuận,TP.Huế, Thừa Thiên Huế
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+           <!-- about us -->
+           <section class="grid wide">
+            <header class="headline">
+                <h2>About us</h2>
+                <p>History of establishment and development of Thành Restaurant</p>
+            </header>
+            <div class="about-us-bg" data-aos="fade-up">
+                <div class="row about-us__content">
+                    <div class="col l-6 m-12 s-12" data-aos="zoom-in" data-aos-delay="500">
+                        <p>Buffet has long been popular in Europe, first appearing in the 17th century in France. With
+                            a new form of eating, rich in menu, refined in form and quality
+                            in each dish. With a team of skilled and professional staff, we are confident to
+                            Phong opened the way, determined to put on the list of Vietnamese cuisine a complete style of eating
+                            new.</p>
+                        <p>For generations, along with a thousand-year history of civilization, cuisine has been enhanced not only
+                            is a purely material need, but it has become the culinary culture in general, and is a feature
+                            of each ethnic region in particular. With the inherent concept of Saigon people,
+                            We always look for the quintessence in each dish, and with the motto: “The best taste in food
+                            taste, sweetness in the spirit", Thanh Nam restaurant system was born to satisfy
+                            the most demanding diners. Each space in the restaurant system is a synthesis
+                            Harmonious combination of culinary quintessence, architectural beauty and devotion in the human element
+                            people. We aim to bring out the familiar yet strange, and help define perfection
+                            in the heart of every diners when coming here.</p>
+                    </div>
+                    <div class="col l-6 m-12 s-12 about-us__img" data-aos="fade-down" data-aos-delay="1000">
+                        <img src="assets/img/about-us-history-01.jpg" alt="">
                     </div>
                 </div>
-            </section>
-            <!-- Close map -->
+            </div>
+            <div class="about-us-bg" data-aos="fade-up">
+                <div class="row about-us__content">
+                    <div class="col l-6 m-12 s-12 about-us__img" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="assets/img/about-us-history-02.jpg" alt="">
+                    </div>
+                    <div class="col l-6 m-12 s-12">
+                        <p data-aos="fade-down" data-aos-delay="800">Proud to be the largest buffet restaurant chain in Vietnam,
+                            Thanh Nam restaurant system provides meals
+                            Lunch and dinner buffet with rich menu including more than 150 dishes of 3 regions, European - Asian dishes,
+                            seafood, grilled food and Japanese food… Now, you won't have to worry about choosing
+                            among hundreds of thousands of food brands, because even a simple dinner between
+                            relatives, friends, jubilant parties of brothers and sisters or a
+                            Intimate meeting, cozy gathering of the whole family, we can all meet
+                            meet the diverse needs of customers.</p>
+                        <p data-aos="fade-down" data-aos-delay="1100">Not only a place to gather delicious food from all over
+                            regions across the country and the world,
+                            Thanh Nam restaurant is the only one that gives diners a new and bold culinary space
+                            cultural features. Live music performances include classical music, ethnic music, music
+                            lyrical, associated with units such as the Vietnam Circus Federation, promising to bring you
+                            diners with attractive art variety shows, so that diners can enjoy themselves
+                            At the food festival, they were treated to "spiritual delicacies" completely and completely
+                            perfect.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-bg" data-aos="fade-up">
+                <div class="row about-us__content">
+                    <div class="col l-6 m-12 s-12">
+                        <h2 data-aos="fade-right">TRADE HISTORY</h2>
+                        <p data-aos="zoom-in" data-aos-delay="500">2011 is the beginning milestone, marking the establishment of
+                            Thanh restaurant - child
+                            The spirit is conceived in a long process of learning and experiencing, laying the foundation
+                            firmly for the non-stop development of Thanh restaurant chain in the future.</p>
+                    </div>
+                    <div class="col l-6 m-12 s-12 about-us__img" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assets/img/about-us-history-03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-bg" data-aos="fade-up">
+                <div class="row about-us__content">
+                    <div class="col l-6 m-12 s-12 about-us__img" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="assets/img/about-us-history-04.jpg" alt="">
+                    </div>
+                    <div class="col l-6 m-12 s-12">
+                        <p data-aos="fade-down" data-aos-delay="1100">December 2013, on the way of increasing day by day
+                            service quality level and is also one of
+                            Memorable milestones of Thanh restaurant system, Thanh Restaurant 2, replacing the 2nd brother in the restaurant system
+                            Each restaurant opened is an important mark in the development career of Thanh restaurant
+                            , is one more time we affirm the brand's position as a rising ship
+                            I went to the big sea.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-bg" data-aos="fade-up">
+                <div class="row about-us__content">
+                    <div class="col l-6 m-12 s-12">
+                        <p data-aos="zoom-in" data-aos-delay="500">The first restaurant means the beginning of a century
+                            New resource in the field of restaurants and services
+                            service, as a statement "We have arrived", the second restaurant followed as an affirmation
+                            "We're Not Just One"
+                            Strong growth in a long-term plan. and we won't just stop at
+                            2nd restaurant - a new turning point - The sublimation of a brand!</p>
+                        <p data-aos="zoom-in" data-aos-delay="1000">Up to this point, Buffet is gradually becoming familiar
+                            belonging to the Vietnamese, synonymous
+                            With the appearance of different large and small restaurants, it is contributing to creating a fun playground
+                            rhythm in the service industry. But the way that we are existing and growing in more than
+                            The past 10 years have been based on enthusiasm, enthusiasm, dedication, nothing but expectations
+                            want to build a methodical and sustainable operating process to provide a service above the level
+                            perfect for customers when they trust and expect from us. Besides, we also
+                            Constantly learning, always refreshing myself not only in delicious food but also in space
+                            and many other premium services.
+                        </p>
+                    </div>
+                    <div class="col l-6 m-12 s-12 about-us__img" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assets/img/about-us-history-05.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-bg" data-aos="fade-up">
+                <div class="row about-us__content">
+                    <div class="col l-6 m-12 s-12 about-us__img" data-aos="fade-in" data-aos-delay="500">
+                        <img src="assets/img/about-us-history-06.jpg" alt="">
+                    </div>
+                    <div class="col l-6 m-12 s-12">
+                            <p data-aos="fade-down" data-aos-delay="800">Since its establishment, the service quality of the chain
+                                Thanh restaurant has been trusted by customers
+                                thought and affirmed when continuously honored to be selected to serve buffet for high delegations
+                                Government level, Summits such as ASEM5, VCC Commercial Office... are the places to organize
+                                hosted a reception for international businessmen and thousands of domestic and foreign tourists
+                                foreign.</p>
+                        <p data-aos="fade-down" data-aos-delay="1000">Come to us, you are not only
+                            enjoy delicious food, which will be
+                            welcomed by the feeling of closeness, friendliness from the staff, warm and exhilarating in
+                            service, luxury and diversity in the restaurant's architectural space.</p>
+                        <p data-aos="fade-down" data-aos-delay="1100">Thanh restaurant chain is the perfect choice
+                            Perfect for everyone!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+           <!-- close about us -->
+           
             
             <!-- footer -->
             <footer class="footer">
@@ -372,27 +372,5 @@
        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
        <!-- All JS -->
        <script src="assets/js/main.js"></script>
-       <script src="assets/js/form-validation.js"></script>
-
-       <script>
-           document.addEventListener('DOMContentLoaded',function() {
-               Validator({
-                   form: '#form-1',
-                   formGroupSelector: '.form-group',
-                   errorSelector: '.form-message',
-                   rules: [
-                       Validator.isRequired('#date','Please enter time'),
-                       Validator.isRequired('#fullname','Please enter your full name'),
-                       Validator.isRequired('#address','Please enter your address'),
-                       Validator.isRequired('#phone','Enter at least 10 characters'),
-                   ],
-                   onSubmit: function(data){
-                    //    call API
-                    console.log(data);
-                   }
-               })
-           }
-           )
-       </script>
     </body>
 </html>

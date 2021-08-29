@@ -100,3 +100,75 @@ $(document).ready(function () {
 });
 
 
+/*---------------------------------------------FOOTER----------------------------------------------*/
+// CHECK FORM REGISTER infomation
+function registerInfoCheck(){
+  var register = document.getElementById("emailFooter");
+
+  if(
+    register.value != "" && register.value.indexOf("@") != -1 && register.value.indexOf(".") != -1
+  )
+  {
+    swal(
+      "You have successfully subscribed to receive information!",
+      "success"
+    );
+  }else{
+    swal("An error occurred!", "You have not entered information!", "error");
+  }
+}
+
+/*---------------------------------------------Book a table----------------------------------------------*/
+function bookCheck(){
+  var date = document.getElementById("date");
+  var name = document.getElementById("fullname");
+  var address = document.getElementById("address");
+  var phone = document.getElementById("phone");
+
+  if(
+    date.value != "" && name.value != "" && address.value != "" && phone.value != ""
+  ){
+    swal({
+      title: "Confirm !",
+      text: "Are you sure to book a table?",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) =>  {
+      if(willDelete){
+        swal(
+          "You have successfully booked your table!",
+          {
+            icon:"success",
+          }
+        );
+      }else{
+        swal("You have canceled your reservation!");
+      }
+    });
+  }else{
+    swal(
+      "An error occurred!",
+      "You have not entered complete or incorrect information!",
+      "error"
+    );
+  }
+}
+
+/*---------------------------------------------Menu----------------------------------------------*/
+var numOfElement = document.getElementsByClassName("discount").length;
+var discountArr = [numOfElement];
+var priceArr = [numOfElement];
+
+for (let i = 0; i < numOfElement; i++){
+  var saleNum = document.getElementsByClassName("discount");
+  discountArr[i]=saleNum[i].innerText;
+  discountArr[i]=parseFloat(discountArr[i]);
+
+  var priceNum = document.getElementsByClassName("price");
+  priceArr[i]=priceNum[i].innerText;
+  priceArr[i]=parseFloat(priceArr[i]);
+
+  var priceDiscount = document.getElementsByClassName("price_discount");
+  priceDiscount[i].innerText = (priceArr[i] - discountArr[i]* 0.01 *priceArr[i]).toFixed(2) + "$";
+}
